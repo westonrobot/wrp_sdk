@@ -1,6 +1,6 @@
 # Weston Robot Platform SDK (wrp_sdk)
 
-wrp_sdk provides C++ interface to mobile robot bases and robot peripherals (IMU, Ultrasonic, GPS, Camera Lift, etc.) from Weston Robot. wrp_sdk is provided as a Debian installation package and you can install it by following the steps given below. For sample code, please check the "sample-*" branches of this repository. 
+wrp_sdk provides C++ interface to mobile robot bases and robot peripherals (IMU, Ultrasonic, GPS, Camera Lift, etc.) from Weston Robot. wrp_sdk is provided as a **Debian installation package** only and you can install it by following the steps given below. For sample code, please check the "sample-*" branches of this repository. 
 
 ## Supported platforms
 
