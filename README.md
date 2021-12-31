@@ -24,3 +24,14 @@ $ sudo apt-get install wrp_zbus=0.6.1
 $ sudo apt-get install wrp_sdk=0.8.7
 ```
 Please contact us if you're not sure which version of the SDK you should use.
+
+## Build the sample code
+
+Please refer to the BUILD.md document in each "sample-*" branch for the building instructions.
+
+## Q&A
+
+* **Q1:** What's the difference between [ugv_sdk](https://github.com/westonrobot/ugv_sdk) and wrp_sdk?
+
+    **A1**: **ugv_sdk** provides a C++ interface to mobile robot bases manufactured by AgileX Robotics. It's a joint effort by Weston Robot and Agilex Robotics development teams. Robots compatible with ugv_sdk talk the AgileX Procotocol (V1 and V2) on the CAN bus. 
+    **wrp_sdk** provides a C++ interface to both robot bases and peripherals supported by Weston Robot. It allows users to use a single unified interface to control all different kinds of mobile robots (e.g. wheeled/tracked/legged robots) including but not limited to the ones from AgileX. It is also the foundation of the various robotics software toolboxes developed by Weston Robot (e.g. the Robot Maintenance Toolbox, the Assisted Driving Toolbox).
