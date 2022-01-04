@@ -10,17 +10,16 @@
  * Copyright (c) 2021 Weston Robot Pte. Ltd.
  */
 
-#include <memory>
+#include <unistd.h>
 #include <atomic>
 #include <iomanip>
+#include <iostream>
+#include <memory>
 #include <sstream>
 
 #include "wrp_sdk/mobile_base/westonrobot/mobile_base.hpp"
 
 using namespace westonrobot;
-
-std::shared_ptr<MobileBase> robot;
-std::atomic<bool> has_control_token;
 
 std::string ConvertToString(double value) {
   std::stringstream stream;
@@ -28,50 +27,9 @@ std::string ConvertToString(double value) {
   return stream.str();
 }
 
-HandshakeResultType RequestControlToken() {
-  // You need to gain the control token in order to control the robot to move
-  auto feedback = robot->RequestControl();
-
-  switch (feedback.code) {
-    case HANDSHAKE_RESULT_ROBOT_BASE_NOT_ALIVE:
-      std::cout << "RobotBaseNotAlive" << std::endl;
-      break;
-    case HANDSHAKE_RESULT_CONTROL_ACQUIRED:
-      std::cout << "ControlAcquired" << std::endl;
-      break;
-    case HANDSHAKE_RESULT_CONTROL_REJECTED_ROBOT_BASE_FAULT:
-      std::cout << "ControlRejected_RobotBaseFault" << std::endl;
-      break;
-    case HANDSHAKE_RESULT_CONTROL_REJECTED_RC_HALT_TRIGGERED:
-      std::cout << "ControlRejected_RcHaltTriggered" << std::endl;
-      break;
-    case HANDSHAKE_RESULT_CONTROL_REJECTED_RC_CONTROL_ACTIVE:
-      std::cout << "ControlRejected_RcControlActive" << std::endl;
-      break;
-    case HANDSHAKE_RESULT_CONTROL_REJECTED_TOKEN_TRANSFER_INTERRUPTED:
-      std::cout << "ControlRejected_TokenTransferInterrupted" << std::endl;
-      break;
-    case HANDSHAKE_RESULT_CONTROL_REQUEST_TIMEOUT:
-      std::cout << "ControlRequestTimeout" << std::endl;
-      break;
-  }
-
-  if (feedback.code == HANDSHAKE_RESULT_CONTROL_ACQUIRED) {
-    has_control_token = true;
-    std::cout << "Has Token " << std::endl;
-  } else {
-    std::cout << "Failed to gain control token, robot will not be controlled "
-                 "by the SDK"
-              << std::endl;
-  }
-
-  return feedback;
-}
-
 void ControlLostCallback(void) {
   // This function should be non-blocking and short
   std::cout << "SDK has lost control!" << std::endl;
-  has_control_token = false;
 }
 
 int main(int argc, char** argv) {
@@ -87,60 +45,97 @@ int main(int argc, char** argv) {
   }
 
   /* Create a mobile base object and try to gain control token */
+  std::shared_ptr<MobileBase> robot;
   robot = std::make_shared<MobileBase>();
-  has_control_token = false;
+
   robot->RegisterLoseControlCallback(ControlLostCallback);
 
   robot->Connect(device_name);
 
-  RequestControlToken();
+  robot->RequestControl();
+
+  MotionResetCommand motion_reset_command;
+  motion_reset_command.type = MotionResetCommandType::kOdometry;
+  robot->SetMotionResetCommand(motion_reset_command);
+
+  LightCommand light_command;
+  light_command.command.intensity = 20;
+  light_command.command.mode = LightMode::kCustom;
+  robot->SetLightCommand(light_command);
+
+  // light_command.command.mode = LightMode::kEnquiry;
+  // robot->SetLightCommand(light_command);
+
+  auto light_state = robot->GetLightState();
+
+  std::cout << "Light State: " << (int)light_state.state.mode << " "
+            << light_state.state.intensity << std::endl;
 
   /* Now you can enter the main control loop*/
-  ZVector3 linear, angular;
-  linear.x = 0.0;
-  linear.y = 0.0;
-  linear.z = 0.0;
-
-  angular.x = 0.0;
-  angular.y = 0.0;
-  angular.z = 0.0;
-
   while (true) {
-    // set motion command
-    if (has_control_token) {
-      robot->SetMotionCommand(linear, angular);
+    if (robot->SdkHasControlToken()) {
+      robot->SetMotionCommand({{0, 0, 0}, {0, 0, 0}});
     } else {
-      RequestControlToken();
+      robot->RequestControl();
     }
 
     // get robot and sensor state
-    SystemStateMsg system_state = robot->GetSystemState();
-    MotionStateMsg motion_state = robot->GetMotionState();
-    LightStateMsg light_state = robot->GetLightState();
+    auto system_state = robot->GetSystemState();
+    auto motion_state = robot->GetMotionState();
+    auto odom = robot->GetOdometry();
+    auto battery = robot->GetBatteryState();
+
     // only when there is relevant sensor available
-    UltrasonicDataMsg ultrasonic_data = robot->GetUltrasonicData();
-    std::vector<TofDataMsg> tof_data = robot->GetTofData();
+    auto ultrasonic_data = robot->GetUltrasonicData();
+    auto tof_data = robot->GetTofData();
+    auto rc_state = robot->GetRcState();
 
-    // print the aquired information
-    std::cout << "Linear: "
-              << ConvertToString(motion_state.actual_motion.linear.x) << ", ";
-    std::cout << "Angular: "
-              << ConvertToString(motion_state.actual_motion.angular.z) << " ; ";
-
-    std::cout << "Ultrasonic: ";
-    for (int i = 0; i < 7; ++i)
-      std::cout << i << ":" << std::setw(3) << ultrasonic_data.distance[i]
-                << ", ";
-    std::cout << 7 << ":" << std::setw(3) << ultrasonic_data.distance[7]
-              << " ; ";
-    printf("TOF1: %2d, TOF2: %2d; ", tof_data[0].distance,
-           tof_data[1].distance);
-    std::cout << "TOF1: " << std::setw(3) << ultrasonic_data.distance[0]
+    std::cout << "Linear: " << ConvertToString(odom.linear.x) << ", ";
+    std::cout << "Angular: " << ConvertToString(odom.angular.z) << " ; ";
+    std::cout << "Position_x: " << ConvertToString(odom.position.x) << ", ";
+    std::cout << "Position_y: " << ConvertToString(odom.position.y) << " ;\n";
+    std::cout << "Orientation_x: " << ConvertToString(odom.orientation.x)
               << ", ";
-    std::cout << "TOF2: " << std::setw(3) << ultrasonic_data.distance[1]
+    std::cout << "Orientation_y: " << ConvertToString(odom.orientation.y)
               << " ; ";
-    std::cout << "Battery: " << system_state.battery_state.voltage << std::endl;
+    std::cout << "Orientation_z: " << ConvertToString(odom.orientation.z)
+              << ", ";
+    std::cout << "Orientation_w: " << ConvertToString(odom.orientation.w)
+              << " ; ";
+
+    std::cout << "\nUltrasonic:\n";
+    for (int i = 0; i < 8; ++i)
+      std::cout << i << ":" << ultrasonic_data.data[i].range << std::endl;
+
+    std::cout << "\nSystemState:\n";
+    std::cout << "Rc_connected: " << system_state.rc_connected << std::endl;
+    std::cout << "Error_code: " << (int)system_state.error_code << std::endl;
+    std::cout << "Operational_state: " << (int)system_state.operational_state
+              << std::endl;
+    std::cout << "Control_state: " << (int)system_state.control_state
+              << std::endl;
+
+    std::cout << "Desired_linear: " << motion_state.desired_linear.x << " "
+              << motion_state.desired_angular.z << " ; ";
+    std::cout << " Collision_detected: " << motion_state.collision_detected
+              << " ; "
+              << "Assisted_mode: " << motion_state.assisted_mode_enabled
+              << std::endl;
+
+    std::cout << " Axes: " << rc_state.axes[0] << " " << rc_state.axes[1] << " "
+              << rc_state.axes[2] << " " << rc_state.axes[3] << " ";
+    std::cout << rc_state.axes[4] << " " << rc_state.axes[5] << " "
+              << rc_state.axes[6] << " " << rc_state.axes[7] << std::endl;
+
+    std::cout << " Buttons: " << rc_state.buttons[0] << " "
+              << rc_state.buttons[1] << " " << rc_state.buttons[2] << " "
+              << rc_state.buttons[3] << " ";
+    std::cout << rc_state.buttons[4] << " " << rc_state.buttons[5] << " "
+              << rc_state.buttons[6] << " " << rc_state.buttons[7] << std::endl;
+
+    std::cout << " Battery : " << battery.voltage << std::endl;
 
     usleep(100000);
   }
+  robot->RenounceControl();
 }
