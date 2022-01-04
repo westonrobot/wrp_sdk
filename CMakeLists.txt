@@ -11,7 +11,6 @@ list(APPEND CMAKE_PREFIX_PATH "/opt/weston_robot/lib/cmake")
 
 ## Find wrp_sdk and its dependent package wrp_zbus
 find_package(wrp_sdk REQUIRED)
-find_package(wrp_zbus REQUIRED)
 
 ## Add your target
 add_executable(sdk_demo src/sdk_demo.cpp)
