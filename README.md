@@ -16,14 +16,15 @@ sudo apt-get update
 sudo apt-get install wrp_sdk
 ```
 
-**Note**: "apt-get" will install the latest version of wrp_sdk by default. Weston Robot releases stable versions of the SDK twice a year. In case your robot firmware is not compatible with the latest SDK, you can install older versions of the SDK manually. For example,
+**Note**: "apt-get" will install the latest version of wrp_sdk by default. Weston Robot releases stable versions of the SDK regularly. In case your robot firmware is not compatible with the latest SDK, you can install older versions of the SDK manually. For example,
 
 ```
 $ sudo apt-get remove wrp_zbus
 $ sudo apt-get install wrp_zbus=0.6.1
 $ sudo apt-get install wrp_sdk=0.8.7
 ```
-Please contact us if you're not sure which version of the SDK you should use.
+
+You can also download compatible wrp_sdk and wrp_zbus debian installation packages from [Releases](https://github.com/westonrobot/wrp_sdk/releases). Please contact us if you're not sure which version of the SDK you should use.
 
 ## Build the sample code
 
