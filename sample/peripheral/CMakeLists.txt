@@ -1,0 +1,11 @@
+add_executable(sample_gps_receiver_demo gps_receiver_demo.cpp)
+target_link_libraries(sample_gps_receiver_demo westonrobot::wrp_sdk)
+
+add_executable(sample_imu_sensor_demo imu_sensor_demo.cpp)
+target_link_libraries(sample_imu_sensor_demo westonrobot::wrp_sdk)
+
+add_executable(sample_ultrasonic_sensor_demo ultrasonic_sensor_demo.cpp)
+target_link_libraries(sample_ultrasonic_sensor_demo westonrobot::wrp_sdk)
+
+add_executable(sample_power_regulator_demo power_regulator_demo.cpp)
+target_link_libraries(sample_power_regulator_demo westonrobot::wrp_sdk)
