@@ -16,13 +16,21 @@ Please find the latest installation instructions from [this page](https://docs.w
 **Install the package**
 
 ```
+$ sudo apt-get install -y software-properties-common
+$ sudo add-apt-repository ppa:lely/ppa && sudo apt-get update
+$ sudo apt-get install -y pkg-config liblely-coapp-dev liblely-co-tools
+```
+
+```
 $ sudo apt-get install wrp_sdk
 ```
 
-**Note**: "apt-get" will install the latest version of wrp_sdk by default. Weston Robot releases stable versions of the SDK regularly. In case your robot firmware is not compatible with the latest SDK, you can install older versions of the SDK manually. For example,
+**Note**: "apt-get" will install the latest version of wrp_sdk by default. Weston Robot releases stable versions of the SDK regularly. In case your robot firmware is not compatible with the latest SDK, you can install older versions of the SDK manually. 
+
+For example, if your robot is only compatible with wrp_sdk up to v0.8.7, you can specify the version you want to install
 
 ```
-$ sudo apt-get remove wrp_zbus
+$ sudo apt-get remove wrp_zbus wrp_sdk
 $ sudo apt-get install wrp_zbus=0.6.1
 $ sudo apt-get install wrp_sdk=0.8.7
 ```
