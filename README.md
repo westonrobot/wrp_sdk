@@ -9,11 +9,14 @@ wrp_sdk provides C++ interface to mobile robot bases and robot peripherals (IMU,
 
 ## Install the SDK
 
+**Set up apt-get source**
+
+Please find the latest installation instructions from [this page](https://docs.westonrobot.net/software/installation_guide.html).
+
+**Install the package**
+
 ```
-echo "deb https://westonrobot.jfrog.io/artifactory/wrtoolbox-release $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/weston-robot.list
-curl -sSL 'https://westonrobot.jfrog.io/artifactory/api/security/keypair/wr-deb/public' | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install wrp_sdk
+$ sudo apt-get install wrp_sdk
 ```
 
 **Note**: "apt-get" will install the latest version of wrp_sdk by default. Weston Robot releases stable versions of the SDK regularly. In case your robot firmware is not compatible with the latest SDK, you can install older versions of the SDK manually. For example,
