@@ -34,7 +34,6 @@ jobs:
         with:
           ssh-key: ${{ secrets.GIT_REPO_SSH_KEY }}
           submodules: recursive
-          path: "colcon_ws/src"
       - name: Install boost
         run: |
           apt-get update && apt-get -y install libboost-all-dev
