@@ -1,3 +1,15 @@
+/**
+ * @file imu_sensor_demo.cpp
+ * @brief IMU Sensor API usage demo
+ * @date 02-04-2024
+ * 
+ * Demo showing the usage of the IMU sensor API.
+ * 
+ * Supports Hipnuc IMU sensors
+ * 
+ * @copyright Copyright (c) 2024 Weston Robot Pte. Ltd.
+ */
+
 #include <memory>
 #include <thread>
 #include <iostream>
@@ -31,10 +43,9 @@ int main(int argc, char **argv) {
   if (argc > 1) device_path = argv[1];
   std::unique_ptr<ImuInterface> imu = std::make_unique<ImuSensorHipnuc>();
   imu->SetDataReceivedCallback(ImuCallback);
-  imu->Connect("can0");
-
-  //  imu->Setup(device_path, 115200);
-  //  std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+  
+   imu->Connect(device_path, 115200);
+   std::this_thread::sleep_for(std::chrono::milliseconds(2000));
 
   while (imu->IsOkay()) {
     std::this_thread::sleep_for(std::chrono::milliseconds(500));

@@ -1,0 +1,90 @@
+name: default
+
+on:
+  push:
+    branches:
+      - "**"
+      - "!main"
+  pull_request:
+    branches:
+      - "**"
+
+env:
+  VERSION: "1.2.*"
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        container:
+          [
+            "westonrobot/ubuntu:focal-ci-latest",
+            "westonrobot/ubuntu:jammy-ci-latest",
+            "westonrobot/debian:bullseye-ci-latest",
+          ]
+    runs-on: ubuntu-latest
+    container:
+      image: ${{ matrix.container }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.GIT_REPO_SSH_KEY }}
+          submodules: recursive
+      - name: Install boost
+        run: |
+          apt-get update && apt-get -y install libboost-all-dev
+      - name: Install latest wrp_sdk
+        run: |
+          sudo apt-get update
+          sudo install -m 0755 -d /etc/apt/keyrings
+          curl -fsSL http://deb.westonrobot.net/signing.key | sudo gpg --batch --yes --dearmor -o /etc/apt/keyrings/weston-robot.gpg
+          sudo chmod a+r /etc/apt/keyrings/weston-robot.gpg
+          echo \
+              "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/weston-robot.gpg] http://deb.westonrobot.net/$(lsb_release -cs) $(lsb_release -cs) main" | \
+              sudo tee /etc/apt/sources.list.d/weston-robot.list > /dev/null
+          sudo apt-get update
+          apt-get update && apt-get -y install wrp-sdk=${{ env.VERSION }}
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gpg-agent
+      - name: Install LelyCAN
+        if: |
+          !contains( matrix.container , 'debian' )
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y software-properties-common
+          sudo add-apt-repository -y ppa:lely/ppa && sudo apt-get update
+          sudo apt-get install -y pkg-config liblely-coapp-dev liblely-co-tools
+      - name: Install LelyCAN (debian)
+        if: |
+          contains( matrix.container , 'debian' )
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            git build-essential automake libtool \
+            python3-setuptools python3-wheel \
+            python3-empy python3-yaml \
+            libbluetooth-dev \
+            valgrind \
+            pkg-config \
+            doxygen graphviz
+          git clone https://gitlab.com/lely_industries/lely-core.git
+          cd lely-core
+          autoreconf -i
+          mkdir -p build && cd build
+          ../configure --disable-cython
+          make
+          sudo make install
+      - name: Install Libmodbus
+        run: |
+          apt-get install -y libmodbus-dev
+      - name: Build samples
+        run: |
+          mkdir build
+          cd build
+          cmake .. && make
