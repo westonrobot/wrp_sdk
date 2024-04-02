@@ -6,7 +6,7 @@ on:
       - 'main'
 
 env:
-  VERSION: "1.2.*"
+  TAG_VERSION: "1.2.x"
 
 jobs:
   tag-release:
@@ -21,7 +21,7 @@ jobs:
         id: tag_version
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          custom_tag: ${{ env.VERSION }}
+          custom_tag: ${{ env.TAG_VERSION }}
           release_branches: "main"
           pre_release_branches: "prerelease"
       - name: Create Github Release
