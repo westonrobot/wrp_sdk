@@ -25,14 +25,14 @@ wrp_sdk is provided as a **Debian installation package** only and you can instal
 - Ubuntu 22.04 LTS (Jammy Jellyfish): x86_64, arm64
 
 ### Supported Robot Bases
-- AgileX Robot Bases using AgileX Robotics' V2 Protocol
-- Mobile Bases using Weston Robot's zbus Protocol
+- [AgileX Robot Bases using AgileX Robotics' V2 Protocol](./sample/mobile_base/agilex_v2_robot_demo.cpp)
+- [Mobile Bases using Weston Robot's zbus Protocol](./sample/mobile_base/mobilebase_demo.cpp)
 
 ### Supported Peripherals
-- Serial GPS Receivers using NMEA Protocol.
-- Hipnuc IMU Sensors.
-- Dyp Ultrasonic Sensors.
-- [Weston Robot's Power Regulator V2](https://docs.westonrobot.net/periph_user_guide/westonrobot/power_regulator_v2.X.html)
+- [Serial GPS Receivers using NMEA Protocol](./sample/peripheral/gps_receiver_demo.cpp)
+- [Hipnuc IMU Sensors](./sample/peripheral/imu_sensor_demo.cpp)
+- [Dyp Ultrasonic Sensors](./sample/peripheral/ultrasonic_sensor_demo.cpp)
+- [Weston Robot's Power Regulator V2](./sample/peripheral/power_regulator_demo.cpp)
 
 ## Installation
 * Install Dependencies
