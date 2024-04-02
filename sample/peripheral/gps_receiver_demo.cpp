@@ -1,10 +1,13 @@
-/*
- * test_gps_receiver.cpp
- *
- * Created on: Jun 27, 2021 20:35
- * Description:
- *
- * Copyright (c) 2021 Ruixiang Du (rdu)
+/**
+ * @file gps_receiver_demo.cpp
+ * @brief Nmea GPS receiver demo
+ * @date 02-04-2024
+ * 
+ * Demo showing the usage of the Nmea GPS receiver API.
+ * 
+ * Supports any NMEA compatible Serial GPS receiver with GGA Messages
+ * 
+ * @copyright Copyright (c) 2024 Weston Robot Pte. Ltd.
  */
 
 #include <unistd.h>

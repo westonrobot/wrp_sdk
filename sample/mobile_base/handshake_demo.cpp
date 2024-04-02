@@ -1,12 +1,13 @@
-/*
- * handshake_demo.cpp
+/**
+ * @file handshake_demo.cpp
+ * @brief Demonstrate the usage of the Handshake API
+ * @date 02-04-2024
  *
- * Created on: Mar 10, 2021 10:35
- * Description:
+ * Demo showing all possible codes returned by the control Handshake API for
+ * robots.
  *
- * Copyright (c) 2021 Weston Robot Pte. Ltd.
+ * @copyright Copyright (c) 2024 Weston Robot Pte. Ltd.
  */
-
 #include <unistd.h>
 #include <iostream>
 
@@ -39,45 +40,52 @@ int main(int argc, char **argv) {
               << "request control\t"
               << "d: "
               << "renounce control\t" << std::endl;
-    std::cout << "s: "
-              << "speed control\t"
-              << "l: "
-              << "light control\t" << std::endl;
     std::cin >> line;
 
     if (line == "r") {
       auto feedback = robot.RequestControl(500);
       switch (feedback) {
         case HandshakeReturnCode::kRobotBaseNotAlive:
-          std::cout << "RobotBaseNotAlive" << std::endl;
+          std::cout << "Robot Base Not Alive" << std::endl;
+          break;
+        case HandshakeReturnCode::kAlreadyGainedControl:
+          std::cout << "Control Already Acquired" << std::endl;
           break;
         case HandshakeReturnCode::kControlAcquired:
-          std::cout << "ControlAcquired" << std::endl;
+          std::cout << "Control Acquired" << std::endl;
           break;
         case HandshakeReturnCode::kControlRejected_RobotBaseFault:
-          std::cout << "ControlRejected_RobotBaseFault" << std::endl;
+          std::cout << "Request Rejected, Robot Has Fault" << std::endl;
           break;
         case HandshakeReturnCode::kControlRejected_RcHaltTriggered:
-          std::cout << "ControlRejected_RcHaltTriggered" << std::endl;
+          std::cout << "Request Rejected, RC Emergency Halt Active"
+                    << std::endl;
           break;
         case HandshakeReturnCode::kControlRejected_RcControlActive:
-          std::cout << "ControlRejected_RcControlActive" << std::endl;
+          std::cout << "Request Rejected, RC Is In Control" << std::endl;
           break;
         case HandshakeReturnCode::kControlRejected_TokenTransferInterrupted:
-          std::cout << "ControlRejected_TokenTransferInterrupted" << std::endl;
+          std::cout << "Request Interrupted" << std::endl;
           break;
         case HandshakeReturnCode::kControlRequestTimeout:
-          std::cout << "ControlRequestTimeout" << std::endl;
+          std::cout << "Request Timed Out" << std::endl;
+          break;
+        default:
           break;
       }
     } else if (line == "d") {
       auto feedback = robot.RenounceControl(500);
       switch (feedback) {
         case HandshakeReturnCode::kControlHandedOver:
-          std::cout << "ControlHandedOver" << std::endl;
+          std::cout << "Control Renounced" << std::endl;
           break;
         case HandshakeReturnCode::kRenounceRequestTimeout:
-          std::cout << "RenounceRequestTimeout" << std::endl;
+          std::cout << "Request Timed Out" << std::endl;
+          break;
+        case HandshakeReturnCode::kAlreadyLostControl:
+          std::cout << "Control Already Renounced" << std::endl;
+          break;
+        default:
           break;
       }
     }

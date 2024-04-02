@@ -1,10 +1,11 @@
-/*
- * mobilebase_demo.cpp
- *
- * Created on: Jan 19, 2022 15:54
- * Description:
- *
- * Copyright (c) 2021 Weston Robot Pte. Ltd.
+/**
+ * @file mobilebase_demo.cpp
+ * @brief Weston Robot Base API usage demo
+ * @date 02-04-2024
+ * 
+ * Demo showing the Weston robot bases running Weston's protocol API.
+ * 
+ * @copyright Copyright (c) 2024 Weston Robot Pte. Ltd.
  */
 
 #include <unistd.h>
