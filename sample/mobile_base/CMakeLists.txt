@@ -1,8 +1,11 @@
 add_executable(sample_handshake_demo handshake_demo.cpp)
-target_link_libraries(sample_handshake_demo westonrobot::wrp_sdk)
+target_link_libraries(sample_handshake_demo westonrobot::wrp_sdk_robot)
 
 add_executable(sample_mobilebase_demo mobilebase_demo.cpp)
-target_link_libraries(sample_mobilebase_demo westonrobot::wrp_sdk)
+target_link_libraries(sample_mobilebase_demo westonrobot::wrp_sdk_robot)
 
 add_executable(sample_agilex_v2_robot_demo agilex_v2_robot_demo.cpp)
-target_link_libraries(sample_agilex_v2_robot_demo westonrobot::wrp_sdk)
+target_link_libraries(sample_agilex_v2_robot_demo westonrobot::wrp_sdk_robot)
+
+add_executable(sample_robooterx_wheelchair_demo robooterx_wheelchair_demo.cpp)
+target_link_libraries(sample_robooterx_wheelchair_demo westonrobot::wrp_sdk_robot)

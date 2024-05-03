@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.10.2)
 project(wrp_sdk_sample)
 
 ## Set compiler to use c++ 14 features
@@ -18,7 +18,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR}
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
 
 ## Find wrp_sdk and its dependent package wrp_zbus
-find_package(wrp_sdk REQUIRED)
+find_package(wrp_sdk 1.3.0...<1.4.0 REQUIRED)
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LelyIO QUIET IMPORTED_TARGET liblely-io2)
