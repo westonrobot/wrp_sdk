@@ -1,0 +1,17 @@
+<map id="include/wrp_sdk/interface/peripheral_base_interface.hpp" name="include/wrp_sdk/interface/peripheral_base_interface.hpp">
+<area shape="rect" id="node1" title="Peripheral Base Interface This interface is not intended to be used by user." alt="" coords="443,5,666,47"/>
+<area shape="rect" id="node2" href="$da/d86/lift__interface_8hpp.html" title="Lift Interface." alt="" coords="228,95,417,136"/>
+<area shape="rect" id="node5" href="$d3/d66/power__regulator__interface_8hpp.html" title="Power Regulator Interface." alt="" coords="442,95,667,136"/>
+<area shape="rect" id="node7" href="$dc/dba/sensor__interface_8hpp.html" title="Sensor Interface." alt="" coords="791,95,980,136"/>
+<area shape="rect" id="node3" href="$db/d8b/camera__lift_8hpp.html" title="Camera Lift Interface." alt="" coords="5,184,203,225"/>
+<area shape="rect" id="node4" href="$dd/dad/lift__controller_8hpp.html" title="Lift Controller with multiple lift mechanisms." alt="" coords="227,184,424,225"/>
+<area shape="rect" id="node6" href="$d7/df9/power__regulator__v2_8hpp.html" title="Power Regulator V2 Interface." alt="" coords="453,184,651,225"/>
+<area shape="rect" id="node8" href="$d6/dbc/gps__interface_8hpp.html" title="GPS Interface." alt="" coords="675,184,864,225"/>
+<area shape="rect" id="node10" href="$de/d5f/imu__interface_8hpp.html" title="IMU Interface." alt="" coords="888,184,1077,225"/>
+<area shape="rect" id="node13" href="$dc/d80/ultrasonic__interface_8hpp.html" title="Ultrasonic Sensor Interface." alt="" coords="1221,184,1411,225"/>
+<area shape="rect" id="node9" href="$d7/d51/gps__receiver__nmea_8hpp.html" title="GPS Recevier Interface for NMEA." alt="" coords="552,273,749,315"/>
+<area shape="rect" id="node11" href="$dc/d51/imu__sensor__hipnuc_8hpp.html" title="IMU Sensor Interface for HiPNUC." alt="" coords="773,273,971,315"/>
+<area shape="rect" id="node12" href="$d1/d24/imu__sensor__wit_8hpp.html" title="IMU Sensor Interface for WIT." alt="" coords="995,273,1192,315"/>
+<area shape="rect" id="node14" href="$d5/dfd/ultrasonic__sensor__dyp_8hpp.html" title="Ultrasonic Sensor Interface for DYP." alt="" coords="1217,273,1415,315"/>
+<area shape="rect" id="node15" href="$d4/dd2/ultrasonic__sensor__w200d_8hpp.html" title="Ultrasonic Sensor Interface for W200D." alt="" coords="1440,273,1659,315"/>
+</map>

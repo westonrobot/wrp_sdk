@@ -1,0 +1,15 @@
+<map id="include/wrp_sdk/peripheral/gps_receiver_nmea.hpp" name="include/wrp_sdk/peripheral/gps_receiver_nmea.hpp">
+<area shape="rect" id="node1" title="GPS Recevier Interface for NMEA." alt="" coords="33,5,231,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,102,69,129"/>
+<area shape="rect" id="node3" title=" " alt="" coords="93,102,171,129"/>
+<area shape="rect" id="node4" href="$d6/dbc/gps__interface_8hpp.html" title="GPS Interface." alt="" coords="195,95,360,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="71,191,127,218"/>
+<area shape="rect" id="node6" title=" " alt="" coords="151,191,238,218"/>
+<area shape="rect" id="node7" href="$dc/da0/common__types_8hpp.html" title="Common Types." alt="" coords="262,184,461,225"/>
+<area shape="rect" id="node10" href="$dc/dba/sensor__interface_8hpp.html" title="Sensor Interface." alt="" coords="485,184,670,225"/>
+<area shape="rect" id="node8" title=" " alt="" coords="283,281,349,307"/>
+<area shape="rect" id="node9" title=" " alt="" coords="373,281,440,307"/>
+<area shape="rect" id="node11" title=" " alt="" coords="477,281,563,307"/>
+<area shape="rect" id="node12" href="$d0/d9a/peripheral__base__interface_8hpp.html" title="Peripheral Base Interface This interface is not intended to be used by user." alt="" coords="588,273,796,315"/>
+<area shape="rect" id="node13" title=" " alt="" coords="663,363,721,389"/>
+</map>

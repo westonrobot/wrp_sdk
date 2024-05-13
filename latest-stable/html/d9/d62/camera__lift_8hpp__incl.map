@@ -1,0 +1,13 @@
+<map id="include/wrp_sdk/peripheral/camera_lift.hpp" name="include/wrp_sdk/peripheral/camera_lift.hpp">
+<area shape="rect" id="node1" title="Camera Lift Interface." alt="" coords="75,5,272,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="100,273,159,300"/>
+<area shape="rect" id="node3" title=" " alt="" coords="40,102,117,129"/>
+<area shape="rect" id="node4" title=" " alt="" coords="141,102,205,129"/>
+<area shape="rect" id="node5" title=" " alt="" coords="230,102,317,129"/>
+<area shape="rect" id="node6" href="$da/d86/lift__interface_8hpp.html" title="Lift Interface." alt="" coords="341,95,499,136"/>
+<area shape="rect" id="node7" title=" " alt="" coords="564,273,631,300"/>
+<area shape="rect" id="node8" title=" " alt="" coords="41,191,127,218"/>
+<area shape="rect" id="node9" href="$dc/da0/common__types_8hpp.html" title="Common Types." alt="" coords="385,184,583,225"/>
+<area shape="rect" id="node11" href="$d0/d9a/peripheral__base__interface_8hpp.html" title="Peripheral Base Interface This interface is not intended to be used by user." alt="" coords="152,184,360,225"/>
+<area shape="rect" id="node10" title=" " alt="" coords="451,273,517,300"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="include/wrp_sdk/interface/gps_interface.hpp" name="include/wrp_sdk/interface/gps_interface.hpp">
+<area shape="rect" id="node1" title="GPS Interface." alt="" coords="117,5,307,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,102,61,129"/>
+<area shape="rect" id="node3" title=" " alt="" coords="86,102,173,129"/>
+<area shape="rect" id="node4" href="$dc/da0/common__types_8hpp.html" title="Common Types." alt="" coords="197,95,395,136"/>
+<area shape="rect" id="node7" href="$dc/dba/sensor__interface_8hpp.html" title="Sensor Interface." alt="" coords="419,95,605,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="217,191,284,218"/>
+<area shape="rect" id="node6" title=" " alt="" coords="308,191,375,218"/>
+<area shape="rect" id="node8" title=" " alt="" coords="411,191,498,218"/>
+<area shape="rect" id="node9" href="$d0/d9a/peripheral__base__interface_8hpp.html" title="Peripheral Base Interface This interface is not intended to be used by user." alt="" coords="523,184,731,225"/>
+<area shape="rect" id="node10" title=" " alt="" coords="597,273,656,300"/>
+</map>
