@@ -1,0 +1,5 @@
+<map id="include/wrp_sdk/interface/imu_interface.hpp" name="include/wrp_sdk/interface/imu_interface.hpp">
+<area shape="rect" id="node1" title="IMU Interface." alt="" coords="120,5,309,47"/>
+<area shape="rect" id="node2" href="$dc/d51/imu__sensor__hipnuc_8hpp.html" title="IMU Sensor Interface for HiPNUC." alt="" coords="5,95,203,136"/>
+<area shape="rect" id="node3" href="$d1/d24/imu__sensor__wit_8hpp.html" title="IMU Sensor Interface for WIT." alt="" coords="227,95,424,136"/>
+</map>

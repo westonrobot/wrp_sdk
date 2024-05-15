@@ -1,0 +1,11 @@
+<map id="include/wrp_sdk/interface/sensor_interface.hpp" name="include/wrp_sdk/interface/sensor_interface.hpp">
+<area shape="rect" id="node1" title="Sensor Interface." alt="" coords="341,5,531,47"/>
+<area shape="rect" id="node2" href="$d6/dbc/gps__interface_8hpp.html" title="GPS Interface." alt="" coords="124,95,313,136"/>
+<area shape="rect" id="node4" href="$de/d5f/imu__interface_8hpp.html" title="IMU Interface." alt="" coords="341,95,531,136"/>
+<area shape="rect" id="node7" href="$dc/d80/ultrasonic__interface_8hpp.html" title="Ultrasonic Sensor Interface." alt="" coords="675,95,864,136"/>
+<area shape="rect" id="node3" href="$d7/d51/gps__receiver__nmea_8hpp.html" title="GPS Recevier Interface for NMEA." alt="" coords="5,184,203,225"/>
+<area shape="rect" id="node5" href="$dc/d51/imu__sensor__hipnuc_8hpp.html" title="IMU Sensor Interface for HiPNUC." alt="" coords="227,184,424,225"/>
+<area shape="rect" id="node6" href="$d1/d24/imu__sensor__wit_8hpp.html" title="IMU Sensor Interface for WIT." alt="" coords="448,184,645,225"/>
+<area shape="rect" id="node8" href="$d5/dfd/ultrasonic__sensor__dyp_8hpp.html" title="Ultrasonic Sensor Interface for DYP." alt="" coords="670,184,869,225"/>
+<area shape="rect" id="node9" href="$d4/dd2/ultrasonic__sensor__w200d_8hpp.html" title="Ultrasonic Sensor Interface for W200D." alt="" coords="893,184,1112,225"/>
+</map>

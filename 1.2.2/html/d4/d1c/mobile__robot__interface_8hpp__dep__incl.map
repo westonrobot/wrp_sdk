@@ -1,0 +1,7 @@
+<map id="include/wrp_sdk/interface/mobile_robot_interface.hpp" name="include/wrp_sdk/interface/mobile_robot_interface.hpp">
+<area shape="rect" id="node1" title="Mobile Robot Interface." alt="" coords="308,5,513,47"/>
+<area shape="rect" id="node2" href="$dd/ddc/agilex__base__v2__adapter_8hpp.html" title="Agilex Base V2 Adapter." alt="" coords="5,95,192,151"/>
+<area shape="rect" id="node3" href="$d6/d86/scout__base__v1__adapter_8hpp.html" title="Scout Base V1 Adapter Minimal support." alt="" coords="216,95,397,151"/>
+<area shape="rect" id="node4" href="$d2/d33/smurf40__base__adapter_8hpp.html" title=" " alt="" coords="422,95,610,151"/>
+<area shape="rect" id="node5" href="$d0/dae/mobile__base_8hpp.html" title="Mobile Base." alt="" coords="635,95,829,151"/>
+</map>

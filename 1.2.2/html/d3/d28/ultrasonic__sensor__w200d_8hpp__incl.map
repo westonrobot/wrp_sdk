@@ -1,0 +1,15 @@
+<map id="include/wrp_sdk/peripheral/ultrasonic_sensor_w200d.hpp" name="include/wrp_sdk/peripheral/ultrasonic_sensor_w200d.hpp">
+<area shape="rect" id="node1" title="Ultrasonic Sensor Interface for W200D." alt="" coords="23,5,242,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="11,102,89,129"/>
+<area shape="rect" id="node3" href="$dc/d80/ultrasonic__interface_8hpp.html" title="Ultrasonic Sensor Interface." alt="" coords="113,95,320,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,191,68,218"/>
+<area shape="rect" id="node5" title=" " alt="" coords="92,191,179,218"/>
+<area shape="rect" id="node6" href="$dc/da0/common__types_8hpp.html" title="Common Types." alt="" coords="180,273,379,315"/>
+<area shape="rect" id="node9" href="$dc/dba/sensor__interface_8hpp.html" title="Sensor Interface." alt="" coords="457,184,643,225"/>
+<area shape="rect" id="node13" href="$db/df0/range__sensor__types_8hpp.html" title="Range Sensor Types." alt="" coords="254,184,433,225"/>
+<area shape="rect" id="node7" title=" " alt="" coords="201,363,267,389"/>
+<area shape="rect" id="node8" title=" " alt="" coords="291,363,358,389"/>
+<area shape="rect" id="node10" title=" " alt="" coords="455,281,541,307"/>
+<area shape="rect" id="node11" href="$d0/d9a/peripheral__base__interface_8hpp.html" title="Peripheral Base Interface This interface is not intended to be used by user." alt="" coords="566,273,774,315"/>
+<area shape="rect" id="node12" title=" " alt="" coords="641,363,699,389"/>
+</map>

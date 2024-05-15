@@ -1,0 +1,23 @@
+<map id="include/wrp_sdk/interface/common_types.hpp" name="include/wrp_sdk/interface/common_types.hpp">
+<area shape="rect" id="node1" title="Common Types." alt="" coords="1109,5,1299,47"/>
+<area shape="rect" id="node2" href="$d6/dbc/gps__interface_8hpp.html" title="GPS Interface." alt="" coords="124,95,313,136"/>
+<area shape="rect" id="node4" href="$de/d5f/imu__interface_8hpp.html" title="IMU Interface." alt="" coords="452,95,641,136"/>
+<area shape="rect" id="node7" href="$da/d86/lift__interface_8hpp.html" title="Lift Interface." alt="" coords="877,95,1067,136"/>
+<area shape="rect" id="node10" href="$d7/d57/mobile__robot__types_8hpp.html" title="Mobile Robot Types." alt="" coords="1341,95,1531,136"/>
+<area shape="rect" id="node16" href="$d3/d66/power__regulator__interface_8hpp.html" title="Power Regulator Interface." alt="" coords="1091,95,1317,136"/>
+<area shape="rect" id="node18" href="$db/df0/range__sensor__types_8hpp.html" title="Range Sensor Types." alt="" coords="1555,95,1744,136"/>
+<area shape="rect" id="node19" href="$dc/d80/ultrasonic__interface_8hpp.html" title="Ultrasonic Sensor Interface." alt="" coords="1744,184,1933,225"/>
+<area shape="rect" id="node3" href="$d7/d51/gps__receiver__nmea_8hpp.html" title="GPS Recevier Interface for NMEA." alt="" coords="5,184,203,225"/>
+<area shape="rect" id="node5" href="$dc/d51/imu__sensor__hipnuc_8hpp.html" title="IMU Sensor Interface for HiPNUC." alt="" coords="227,184,424,225"/>
+<area shape="rect" id="node6" href="$d1/d24/imu__sensor__wit_8hpp.html" title="IMU Sensor Interface for WIT." alt="" coords="448,184,645,225"/>
+<area shape="rect" id="node8" href="$db/d8b/camera__lift_8hpp.html" title="Camera Lift Interface." alt="" coords="669,184,867,225"/>
+<area shape="rect" id="node9" href="$dd/dad/lift__controller_8hpp.html" title="Lift Controller with multiple lift mechanisms." alt="" coords="891,184,1088,225"/>
+<area shape="rect" id="node11" href="$dc/dcc/mobile__robot__interface_8hpp.html" title="Mobile Robot Interface." alt="" coords="1333,184,1539,225"/>
+<area shape="rect" id="node12" href="$dd/ddc/agilex__base__v2__adapter_8hpp.html" title="Agilex Base V2 Adapter." alt="" coords="1333,273,1520,329"/>
+<area shape="rect" id="node13" href="$d6/d86/scout__base__v1__adapter_8hpp.html" title="Scout Base V1 Adapter Minimal support." alt="" coords="1544,273,1725,329"/>
+<area shape="rect" id="node14" href="$d2/d33/smurf40__base__adapter_8hpp.html" title=" " alt="" coords="902,273,1090,329"/>
+<area shape="rect" id="node15" href="$d0/dae/mobile__base_8hpp.html" title="Mobile Base." alt="" coords="1115,273,1309,329"/>
+<area shape="rect" id="node17" href="$d7/df9/power__regulator__v2_8hpp.html" title="Power Regulator V2 Interface." alt="" coords="1112,184,1309,225"/>
+<area shape="rect" id="node20" href="$d5/dfd/ultrasonic__sensor__dyp_8hpp.html" title="Ultrasonic Sensor Interface for DYP." alt="" coords="1750,281,1949,322"/>
+<area shape="rect" id="node21" href="$d4/dd2/ultrasonic__sensor__w200d_8hpp.html" title="Ultrasonic Sensor Interface for W200D." alt="" coords="1973,281,2192,322"/>
+</map>
