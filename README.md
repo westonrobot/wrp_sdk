@@ -4,6 +4,7 @@
 - [Weston Robot Platform SDK (wrp\_sdk)](#weston-robot-platform-sdk-wrp_sdk)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
+  - [Documentation](#documentation)
   - [Features](#features)
     - [Supported Platforms](#supported-platforms)
     - [Supported Robot Bases](#supported-robot-bases)
@@ -22,6 +23,8 @@ wrp_sdk is provided as a **Debian installation package** only and you can instal
 * For the sample codes, please check the appropriate version tags of this repository.
 * For another example of how to use the SDK, you can refer to [wrp_ros2](https://github.com/westonrobot/wrp_ros2) & [wrp_ros](https://github.com/westonrobot/wrp_ros)
 
+## Documentation
+* [wrp_sdk API Documentation](https://westonrobot.github.io/wrp_sdk/)
 
 ## Features
 ### Supported Platforms
