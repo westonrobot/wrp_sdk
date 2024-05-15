@@ -17,7 +17,11 @@
 ## Description
 wrp_sdk provides C++ interface to mobile robot bases and robot peripherals (IMU, Ultrasonic, GPS, Camera Lift, etc.) from Weston Robot.
 
-wrp_sdk is provided as a **Debian installation package** only and you can install it by following the steps given below. For sample code, please check the appropriate version tags of this repository. 
+wrp_sdk is provided as a **Debian installation package** only and you can install it by following the steps given below.
+
+* For the sample codes, please check the appropriate version tags of this repository.
+* For another example of how to use the SDK, you can refer to [wrp_ros2](https://github.com/westonrobot/wrp_ros2) & [wrp_ros](https://github.com/westonrobot/wrp_ros)
+
 
 ## Features
 ### Supported Platforms
@@ -58,7 +62,7 @@ $ sudo apt remove wrp-zbus wrp-sdk
 $ sudo apt install wrp-sdk=1.0.7
 ```
 
-You can also download compatible wrp_sdk and wrp_zbus debian installation packages from [Releases](https://github.com/westonrobot/wrp_sdk/releases). Please contact us at [support@westonrobot.com](mailto:support@westonrobot.com) if you're not sure which version of the SDK you should use.
+You can also download compatible wrp_sdk and wrp_zbus debian installation packages from [Releases](https://github.com/westonrobot/wrp_sdk/releases). Please contact us ([refer below](#contact)) if you're not sure which version of the SDK you should use.
 
 ## Usage
 Sample code demos are provided in the [sample folder](./sample/).
@@ -72,8 +76,8 @@ $ make -j8
 You will get executable "sample_xxx" inside the build/bin folder.
 
 ## Contact
-Please contact us at [support@westonrobot.com](mailto:support@westonrobot.com).
-Documentation of the various robots are available at [docs.westonrobot.net](https://docs.westonrobot.net).
+ * For support and enquiries, please contact us through our [support form](https://forms.office.com/r/UXzrrsgEyW).
+ * Documentation of the various robots are available at [docs.westonrobot.com](https://docs.westonrobot.com).
 
 ## FAQ
 * **Q1:** What's the difference between [ugv_sdk](https://github.com/westonrobot/ugv_sdk) and wrp_sdk?
