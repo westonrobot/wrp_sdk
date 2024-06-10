@@ -77,8 +77,12 @@ int main(int argc, char const *argv[]) {
               << static_cast<int>(system_state.control_state) << std::endl;
 
     westonrobot::BatteryState bms_data = base.GetBatteryState();
-    std::cout << "BMS: " << std::endl;
+    westonrobot::BatteryState bms_data2 = base.GetSecondaryBatteryState();
+    std::cout << "Primary BMS: " << std::endl;
     std::cout << "  SOC: " << bms_data.percentage << "%" << std::endl;
+    std::cout << "Secondary BMS: " << std::endl;
+    std::cout << "  SOC: " << bms_data2.percentage << "%" << std::endl;
+    std::cout << "  voltage: " << bms_data2.voltage << "V" << std::endl;
 
     std::cout << "Controlling robot base..." << std::endl;
 
