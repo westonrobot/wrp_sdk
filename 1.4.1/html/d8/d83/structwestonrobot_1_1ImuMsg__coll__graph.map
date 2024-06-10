@@ -1,0 +1,5 @@
+<map id="westonrobot::ImuMsg" name="westonrobot::ImuMsg">
+<area shape="rect" id="node1" title="IMU message Reference: &#160;[1] http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Imu...." alt="" coords="96,124,259,151"/>
+<area shape="rect" id="node2" href="$d4/dfb/structwestonrobot_1_1vector4__t.html" title=" " alt="" coords="5,5,165,47"/>
+<area shape="rect" id="node3" href="$d7/d1a/structwestonrobot_1_1vector3__t.html" title=" " alt="" coords="189,5,349,47"/>
+</map>

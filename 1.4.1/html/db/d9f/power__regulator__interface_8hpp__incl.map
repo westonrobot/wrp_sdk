@@ -1,0 +1,12 @@
+<map id="include/wrp_sdk/interface/power_regulator_interface.hpp" name="include/wrp_sdk/interface/power_regulator_interface.hpp">
+<area shape="rect" id="node1" title="Power Regulator Interface." alt="" coords="185,5,411,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,102,68,129"/>
+<area shape="rect" id="node3" title=" " alt="" coords="281,184,347,211"/>
+<area shape="rect" id="node4" title=" " alt="" coords="144,102,231,129"/>
+<area shape="rect" id="node5" title=" " alt="" coords="255,102,341,129"/>
+<area shape="rect" id="node6" title=" " alt="" coords="365,102,489,129"/>
+<area shape="rect" id="node7" href="$dc/da0/common__types_8hpp.html" title="Common Types." alt="" coords="513,95,712,136"/>
+<area shape="rect" id="node9" href="$d0/d9a/peripheral__base__interface_8hpp.html" title="Peripheral Base Interface This interface is not intended to be used by user." alt="" coords="737,95,945,136"/>
+<area shape="rect" id="node8" title=" " alt="" coords="579,184,646,211"/>
+<area shape="rect" id="node10" title=" " alt="" coords="811,184,870,211"/>
+</map>

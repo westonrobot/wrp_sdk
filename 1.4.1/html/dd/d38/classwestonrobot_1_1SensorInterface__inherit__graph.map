@@ -1,0 +1,9 @@
+<map id="westonrobot::SensorInterface&lt; T &gt;" name="westonrobot::SensorInterface&lt; T &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="263,143,513,170"/>
+<area shape="rect" id="node3" href="$d5/d8f/classwestonrobot_1_1GpsReceiverNmea.html" title=" " alt="" coords="577,5,771,47"/>
+<area shape="rect" id="node4" href="$d1/d02/classwestonrobot_1_1ImuSensorHipnuc.html" title=" " alt="" coords="561,71,787,112"/>
+<area shape="rect" id="node5" href="$dc/d41/classwestonrobot_1_1ImuSensorWit.html" title=" " alt="" coords="573,136,775,177"/>
+<area shape="rect" id="node6" href="$dc/db3/classwestonrobot_1_1UltrasonicSensorDyp.html" title=" " alt="" coords="563,201,785,243"/>
+<area shape="rect" id="node7" href="$d4/d58/classwestonrobot_1_1UltrasonicSensorW200d.html" title=" " alt="" coords="563,267,785,308"/>
+<area shape="rect" id="node2" href="$d8/d4d/classwestonrobot_1_1PeripheralBaseInterface.html" title=" " alt="" coords="5,136,215,177"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="include/wrp_sdk/interface/range_sensor_types.hpp" name="include/wrp_sdk/interface/range_sensor_types.hpp">
+<area shape="rect" id="node1" title="Range Sensor Types." alt="" coords="644,5,833,47"/>
+<area shape="rect" id="node2" href="$dc/dcc/mobile__robot__interface_8hpp.html" title="Mobile Robot Interface." alt="" coords="416,95,621,136"/>
+<area shape="rect" id="node7" href="$dc/d80/ultrasonic__interface_8hpp.html" title="Ultrasonic Sensor Interface." alt="" coords="864,95,1053,136"/>
+<area shape="rect" id="node3" href="$dd/ddc/agilex__base__v2__adapter_8hpp.html" title="Agilex Base V2 Adapter." alt="" coords="5,184,192,240"/>
+<area shape="rect" id="node4" href="$d6/d86/scout__base__v1__adapter_8hpp.html" title="Scout Base V1 Adapter Minimal support." alt="" coords="216,184,397,240"/>
+<area shape="rect" id="node5" href="$d4/d2d/robooterx__base__adapter_8hpp.html" title="BangBang RobooterX wheelchair." alt="" coords="421,184,616,240"/>
+<area shape="rect" id="node6" href="$d0/dae/mobile__base_8hpp.html" title="Mobile Base." alt="" coords="640,184,835,240"/>
+<area shape="rect" id="node8" href="$d5/dfd/ultrasonic__sensor__dyp_8hpp.html" title="Ultrasonic Sensor Interface for DYP." alt="" coords="859,191,1058,233"/>
+<area shape="rect" id="node9" href="$d4/dd2/ultrasonic__sensor__w200d_8hpp.html" title="Ultrasonic Sensor Interface for W200D." alt="" coords="1083,191,1301,233"/>
+</map>

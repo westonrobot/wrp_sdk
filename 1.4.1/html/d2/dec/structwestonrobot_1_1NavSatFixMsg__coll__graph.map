@@ -1,0 +1,4 @@
+<map id="westonrobot::NavSatFixMsg" name="westonrobot::NavSatFixMsg">
+<area shape="rect" id="node1" title="Satellite Navigation Fix message If the covariance of the fix is known, fill it in completely...." alt="" coords="17,95,221,121"/>
+<area shape="rect" id="node2" href="$d7/d40/structwestonrobot_1_1NavSatStatusMsg.html" title="Satellite Navigation Status message Reference: &#160;[1] http://docs.ros.org/en/melodic/api/sensor_msgs/ht..." alt="" coords="5,5,232,32"/>
+</map>
