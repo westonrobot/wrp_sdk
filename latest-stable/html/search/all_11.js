@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['vector3_5ft_170',['vector3_t',['../d7/d1a/structwestonrobot_1_1vector3__t.html',1,'westonrobot']]],
-  ['vector3_5ft_3c_20double_20_3e_171',['vector3_t&lt; double &gt;',['../d7/d1a/structwestonrobot_1_1vector3__t.html',1,'westonrobot']]],
-  ['vector4_5ft_172',['vector4_t',['../d4/dfb/structwestonrobot_1_1vector4__t.html',1,'westonrobot']]],
-  ['vector4_5ft_3c_20double_20_3e_173',['vector4_t&lt; double &gt;',['../d4/dfb/structwestonrobot_1_1vector4__t.html',1,'westonrobot']]]
+  ['w200d_20ultrasonic_20sensor_169',['W200d Ultrasonic Sensor',['../d4/d78/group__w200d__ultra.html',1,'']]],
+  ['weston_20robot_20platform_20sdk_170',['Weston Robot Platform SDK',['../index.html',1,'']]],
+  ['wit_20imu_20sensor_171',['Wit IMU Sensor',['../d9/dec/group__wit__imu.html',1,'']]]
 ];

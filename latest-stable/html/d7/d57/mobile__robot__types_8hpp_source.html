@@ -232,49 +232,50 @@ $(function() {
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
 <div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="../../dd/d75/structwestonrobot_1_1BatteryState.html">  253</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../dd/d75/structwestonrobot_1_1BatteryState.html">BatteryState</a> {</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keywordtype">float</span> voltage;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordtype">float</span> current;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordtype">float</span> charge;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keywordtype">float</span> capacity;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordtype">float</span> design_capacity;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keywordtype">float</span> percentage;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <a class="code" href="../../d7/d57/mobile__robot__types_8hpp.html#a282308922a7423134e001077ea37ecda">PowerSupplyStatus</a> power_supply_status;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <a class="code" href="../../d7/d57/mobile__robot__types_8hpp.html#a687470d1f83c0a95c468f1ce98a8a95d">PowerSupplyHealth</a> power_supply_health;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <a class="code" href="../../d7/d57/mobile__robot__types_8hpp.html#aeb7630cda9b44b3c943af124259c12a4">PowerSupplyTechnology</a> power_supply_technology;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordtype">bool</span> present;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordtype">float</span> cell_voltage[16];</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;};</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="../../d5/dc1/structwestonrobot_1_1RcState.html">  271</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d5/dc1/structwestonrobot_1_1RcState.html">RcState</a> {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordtype">float</span> axes[8];</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  int32_t buttons[8];</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;};</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="../../d3/def/structwestonrobot_1_1LightState.html">  280</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d3/def/structwestonrobot_1_1LightState.html">LightState</a> {</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  uint32_t id;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <a class="code" href="../../df/db3/structwestonrobot_1_1LightControlType.html">LightControlType</a> state;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;};</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="../../d0/dc8/structwestonrobot_1_1DriverState.html">  289</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d0/dc8/structwestonrobot_1_1DriverState.html">DriverState</a> {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordtype">float</span> driver_voltage;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordtype">float</span> driver_temperature;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordtype">float</span> motor_temperature;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  uint32_t driver_state;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;};</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="../../dd/d2c/structwestonrobot_1_1MotorState.html">  300</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../dd/d2c/structwestonrobot_1_1MotorState.html">MotorState</a> {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  int32_t rpm;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordtype">float</span> current;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  int32_t pulse_count;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;};</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="../../df/dc1/structwestonrobot_1_1ActuatorState.html">  310</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../df/dc1/structwestonrobot_1_1ActuatorState.html">ActuatorState</a> {</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  uint32_t id;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <a class="code" href="../../dd/d2c/structwestonrobot_1_1MotorState.html">MotorState</a> motor;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <a class="code" href="../../d0/dc8/structwestonrobot_1_1DriverState.html">DriverState</a> driver;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;};</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}  <span class="comment">// namespace westonrobot</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MOBILE_ROBOT_TYPES_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordtype">float</span> temperature;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordtype">float</span> current;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keywordtype">float</span> charge;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordtype">float</span> capacity;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keywordtype">float</span> design_capacity;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordtype">float</span> percentage;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <a class="code" href="../../d7/d57/mobile__robot__types_8hpp.html#a282308922a7423134e001077ea37ecda">PowerSupplyStatus</a> power_supply_status;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <a class="code" href="../../d7/d57/mobile__robot__types_8hpp.html#a687470d1f83c0a95c468f1ce98a8a95d">PowerSupplyHealth</a> power_supply_health;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <a class="code" href="../../d7/d57/mobile__robot__types_8hpp.html#aeb7630cda9b44b3c943af124259c12a4">PowerSupplyTechnology</a> power_supply_technology;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordtype">bool</span> present;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordtype">float</span> cell_voltage[16];</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;};</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="../../d5/dc1/structwestonrobot_1_1RcState.html">  272</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d5/dc1/structwestonrobot_1_1RcState.html">RcState</a> {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keywordtype">float</span> axes[8];</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  int32_t buttons[8];</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;};</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="../../d3/def/structwestonrobot_1_1LightState.html">  281</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d3/def/structwestonrobot_1_1LightState.html">LightState</a> {</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  uint32_t id;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <a class="code" href="../../df/db3/structwestonrobot_1_1LightControlType.html">LightControlType</a> state;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;};</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="../../d0/dc8/structwestonrobot_1_1DriverState.html">  290</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d0/dc8/structwestonrobot_1_1DriverState.html">DriverState</a> {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordtype">float</span> driver_voltage;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordtype">float</span> driver_temperature;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keywordtype">float</span> motor_temperature;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  uint32_t driver_state;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;};</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="../../dd/d2c/structwestonrobot_1_1MotorState.html">  301</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../dd/d2c/structwestonrobot_1_1MotorState.html">MotorState</a> {</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  int32_t rpm;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordtype">float</span> current;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  int32_t pulse_count;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;};</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="../../df/dc1/structwestonrobot_1_1ActuatorState.html">  311</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../df/dc1/structwestonrobot_1_1ActuatorState.html">ActuatorState</a> {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  uint32_t id;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <a class="code" href="../../dd/d2c/structwestonrobot_1_1MotorState.html">MotorState</a> motor;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <a class="code" href="../../d0/dc8/structwestonrobot_1_1DriverState.html">DriverState</a> driver;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;};</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}  <span class="comment">// namespace westonrobot</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MOBILE_ROBOT_TYPES_HPP */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="acommon__types_8hpp_html"><div class="ttname"><a href="../../dc/da0/common__types_8hpp.html">common_types.hpp</a></div><div class="ttdoc">Common Types.</div></div>
 <div class="ttc" id="amobile__robot__types_8hpp_html_a282308922a7423134e001077ea37ecda"><div class="ttname"><a href="../../d7/d57/mobile__robot__types_8hpp.html#a282308922a7423134e001077ea37ecda">westonrobot::PowerSupplyStatus</a></div><div class="ttdeci">PowerSupplyStatus</div><div class="ttdoc">Power Supply Status.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:211</div></div>
 <div class="ttc" id="amobile__robot__types_8hpp_html_a2fb7df56f0baf9c1edc4f7cc3c013b19"><div class="ttname"><a href="../../d7/d57/mobile__robot__types_8hpp.html#a2fb7df56f0baf9c1edc4f7cc3c013b19">westonrobot::HandshakeReturnCode</a></div><div class="ttdeci">HandshakeReturnCode</div><div class="ttdoc">Handshake Return Code.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:19</div></div>
@@ -298,21 +299,21 @@ $(function() {
 <div class="ttc" id="amobile__robot__types_8hpp_html_aeb7630cda9b44b3c943af124259c12a4a973dcbba34f921297e0168cc05b08081"><div class="ttname"><a href="../../d7/d57/mobile__robot__types_8hpp.html#aeb7630cda9b44b3c943af124259c12a4a973dcbba34f921297e0168cc05b08081">westonrobot::PowerSupplyTechnology::kLife</a></div><div class="ttdeci">@ kLife</div></div>
 <div class="ttc" id="amobile__robot__types_8hpp_html_aeb7630cda9b44b3c943af124259c12a4a9c0d459c382379c7bf4ea20f21ad7c4b"><div class="ttname"><a href="../../d7/d57/mobile__robot__types_8hpp.html#aeb7630cda9b44b3c943af124259c12a4a9c0d459c382379c7bf4ea20f21ad7c4b">westonrobot::PowerSupplyTechnology::kNicd</a></div><div class="ttdeci">@ kNicd</div></div>
 <div class="ttc" id="amobile__robot__types_8hpp_html_aeb7630cda9b44b3c943af124259c12a4ae22c4266e4bfccfeb3f70467844f6138"><div class="ttname"><a href="../../d7/d57/mobile__robot__types_8hpp.html#aeb7630cda9b44b3c943af124259c12a4ae22c4266e4bfccfeb3f70467844f6138">westonrobot::PowerSupplyTechnology::kLipo</a></div><div class="ttdeci">@ kLipo</div></div>
-<div class="ttc" id="astructwestonrobot_1_1ActuatorState_html"><div class="ttname"><a href="../../df/dc1/structwestonrobot_1_1ActuatorState.html">westonrobot::ActuatorState</a></div><div class="ttdoc">Actuator state Motor and driver state.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:310</div></div>
+<div class="ttc" id="astructwestonrobot_1_1ActuatorState_html"><div class="ttname"><a href="../../df/dc1/structwestonrobot_1_1ActuatorState.html">westonrobot::ActuatorState</a></div><div class="ttdoc">Actuator state Motor and driver state.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:311</div></div>
 <div class="ttc" id="astructwestonrobot_1_1AssistedModeSetCommand_html"><div class="ttname"><a href="../../d2/d33/structwestonrobot_1_1AssistedModeSetCommand.html">westonrobot::AssistedModeSetCommand</a></div><div class="ttdoc">Assisted mode command.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:76</div></div>
 <div class="ttc" id="astructwestonrobot_1_1BatteryState_html"><div class="ttname"><a href="../../dd/d75/structwestonrobot_1_1BatteryState.html">westonrobot::BatteryState</a></div><div class="ttdoc">Battery State.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:253</div></div>
-<div class="ttc" id="astructwestonrobot_1_1DriverState_html"><div class="ttname"><a href="../../d0/dc8/structwestonrobot_1_1DriverState.html">westonrobot::DriverState</a></div><div class="ttdoc">Motor driver state.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:289</div></div>
+<div class="ttc" id="astructwestonrobot_1_1DriverState_html"><div class="ttname"><a href="../../d0/dc8/structwestonrobot_1_1DriverState.html">westonrobot::DriverState</a></div><div class="ttdoc">Motor driver state.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:290</div></div>
 <div class="ttc" id="astructwestonrobot_1_1LightCommand_html"><div class="ttname"><a href="../../dd/dae/structwestonrobot_1_1LightCommand.html">westonrobot::LightCommand</a></div><div class="ttdoc">Light command.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:111</div></div>
 <div class="ttc" id="astructwestonrobot_1_1LightCommand_html_a69028fc3732dd6863a8e6226aa1d36ec"><div class="ttname"><a href="../../dd/dae/structwestonrobot_1_1LightCommand.html#a69028fc3732dd6863a8e6226aa1d36ec">westonrobot::LightCommand::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:112</div></div>
 <div class="ttc" id="astructwestonrobot_1_1LightControlType_html"><div class="ttname"><a href="../../df/db3/structwestonrobot_1_1LightControlType.html">westonrobot::LightControlType</a></div><div class="ttdoc">Light Control.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:102</div></div>
 <div class="ttc" id="astructwestonrobot_1_1LightControlType_html_a7ec33294cf02b591eff6bd0f4534e20c"><div class="ttname"><a href="../../df/db3/structwestonrobot_1_1LightControlType.html#a7ec33294cf02b591eff6bd0f4534e20c">westonrobot::LightControlType::intensity</a></div><div class="ttdeci">uint32_t intensity</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:104</div></div>
-<div class="ttc" id="astructwestonrobot_1_1LightState_html"><div class="ttname"><a href="../../d3/def/structwestonrobot_1_1LightState.html">westonrobot::LightState</a></div><div class="ttdoc">Light state.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:280</div></div>
+<div class="ttc" id="astructwestonrobot_1_1LightState_html"><div class="ttname"><a href="../../d3/def/structwestonrobot_1_1LightState.html">westonrobot::LightState</a></div><div class="ttdoc">Light state.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:281</div></div>
 <div class="ttc" id="astructwestonrobot_1_1MotionCommand_html"><div class="ttname"><a href="../../dd/d2a/structwestonrobot_1_1MotionCommand.html">westonrobot::MotionCommand</a></div><div class="ttdoc">Motion command.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:50</div></div>
 <div class="ttc" id="astructwestonrobot_1_1MotionResetCommand_html"><div class="ttname"><a href="../../d9/ded/structwestonrobot_1_1MotionResetCommand.html">westonrobot::MotionResetCommand</a></div><div class="ttdoc">Motion reset command.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:68</div></div>
 <div class="ttc" id="astructwestonrobot_1_1MotionState_html"><div class="ttname"><a href="../../d0/d65/structwestonrobot_1_1MotionState.html">westonrobot::MotionState</a></div><div class="ttdoc">Motion State.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:188</div></div>
-<div class="ttc" id="astructwestonrobot_1_1MotorState_html"><div class="ttname"><a href="../../dd/d2c/structwestonrobot_1_1MotorState.html">westonrobot::MotorState</a></div><div class="ttdoc">Motor state.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:300</div></div>
+<div class="ttc" id="astructwestonrobot_1_1MotorState_html"><div class="ttname"><a href="../../dd/d2c/structwestonrobot_1_1MotorState.html">westonrobot::MotorState</a></div><div class="ttdoc">Motor state.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:301</div></div>
 <div class="ttc" id="astructwestonrobot_1_1Odometry_html"><div class="ttname"><a href="../../db/d01/structwestonrobot_1_1Odometry.html">westonrobot::Odometry</a></div><div class="ttdoc">Odometry.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:200</div></div>
-<div class="ttc" id="astructwestonrobot_1_1RcState_html"><div class="ttname"><a href="../../d5/dc1/structwestonrobot_1_1RcState.html">westonrobot::RcState</a></div><div class="ttdoc">RX state.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:271</div></div>
+<div class="ttc" id="astructwestonrobot_1_1RcState_html"><div class="ttname"><a href="../../d5/dc1/structwestonrobot_1_1RcState.html">westonrobot::RcState</a></div><div class="ttdoc">RX state.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:272</div></div>
 <div class="ttc" id="astructwestonrobot_1_1SystemState_html"><div class="ttname"><a href="../../dd/d07/structwestonrobot_1_1SystemState.html">westonrobot::SystemState</a></div><div class="ttdoc">System State.</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:175</div></div>
 <div class="ttc" id="astructwestonrobot_1_1SystemState_html_ab7af23d445744860cd24ebd587aa7058"><div class="ttname"><a href="../../dd/d07/structwestonrobot_1_1SystemState.html#ab7af23d445744860cd24ebd587aa7058">westonrobot::SystemState::rc_connected</a></div><div class="ttdeci">bool rc_connected</div><div class="ttdef"><b>Definition:</b> mobile_robot_types.hpp:176</div></div>
 <div class="ttc" id="astructwestonrobot_1_1vector3__t_html"><div class="ttname"><a href="../../d7/d1a/structwestonrobot_1_1vector3__t.html">westonrobot::vector3_t&lt; double &gt;</a></div></div>

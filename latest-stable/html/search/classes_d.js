@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tcpportreader_225',['TCPPortReader',['../d8/d35/classwestonrobot_1_1TCPPortReader.html',1,'westonrobot']]]
+  ['ultrasonicsensordyp_218',['UltrasonicSensorDyp',['../dc/db3/classwestonrobot_1_1UltrasonicSensorDyp.html',1,'westonrobot']]],
+  ['ultrasonicsensorw200d_219',['UltrasonicSensorW200d',['../d4/d58/classwestonrobot_1_1UltrasonicSensorW200d.html',1,'westonrobot']]]
 ];

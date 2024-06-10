@@ -136,8 +136,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memdesc:a0578ef4655163cb611edf00d9c57b256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the System State object.  <a href="../../d2/db2/classwestonrobot_1_1RobooterXBaseAdapter.html#a0578ef4655163cb611edf00d9c57b256">More...</a><br /></td></tr>
 <tr class="separator:a0578ef4655163cb611edf00d9c57b256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab547057f4c0d02f6529f5f463ad3081b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d75/structwestonrobot_1_1BatteryState.html">BatteryState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db2/classwestonrobot_1_1RobooterXBaseAdapter.html#ab547057f4c0d02f6529f5f463ad3081b">GetBatteryState</a> () override</td></tr>
-<tr class="memdesc:ab547057f4c0d02f6529f5f463ad3081b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Battery State object.  <a href="../../d2/db2/classwestonrobot_1_1RobooterXBaseAdapter.html#ab547057f4c0d02f6529f5f463ad3081b">More...</a><br /></td></tr>
+<tr class="memdesc:ab547057f4c0d02f6529f5f463ad3081b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Battery State of primary battery.  <a href="../../d2/db2/classwestonrobot_1_1RobooterXBaseAdapter.html#ab547057f4c0d02f6529f5f463ad3081b">More...</a><br /></td></tr>
 <tr class="separator:ab547057f4c0d02f6529f5f463ad3081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876be60a6fbc38f46ae2d2c1c5218145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d75/structwestonrobot_1_1BatteryState.html">BatteryState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db2/classwestonrobot_1_1RobooterXBaseAdapter.html#a876be60a6fbc38f46ae2d2c1c5218145">GetSecondaryBatteryState</a> ()</td></tr>
+<tr class="memdesc:a876be60a6fbc38f46ae2d2c1c5218145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Battery State of secondary battery.  <a href="../../d2/db2/classwestonrobot_1_1RobooterXBaseAdapter.html#a876be60a6fbc38f46ae2d2c1c5218145">More...</a><br /></td></tr>
+<tr class="separator:a876be60a6fbc38f46ae2d2c1c5218145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcb45c7408b9ba478cd340ae550efaa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc1/structwestonrobot_1_1RcState.html">RcState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db2/classwestonrobot_1_1RobooterXBaseAdapter.html#adcb45c7408b9ba478cd340ae550efaa9">GetRcState</a> () override</td></tr>
 <tr class="memdesc:adcb45c7408b9ba478cd340ae550efaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Rc Channel State object.  <a href="../../d2/db2/classwestonrobot_1_1RobooterXBaseAdapter.html#adcb45c7408b9ba478cd340ae550efaa9">More...</a><br /></td></tr>
 <tr class="separator:adcb45c7408b9ba478cd340ae550efaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,7 +276,8 @@ false if connection failed </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Get the Battery State object. </p>
+<p>Get the Battery State of primary battery. </p>
+<p>Battery located below the seat.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dd/d75/structwestonrobot_1_1BatteryState.html" title="Battery State.">BatteryState</a> </dd></dl>
 
 <p>Implements <a class="el" href="../../d5/d00/classwestonrobot_1_1MobileRobotInterface.html#ae317f0ec73e9cca514a06c892ea5e1dc">westonrobot::MobileRobotInterface</a>.</p>
@@ -398,6 +402,27 @@ false if connection failed </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>RcChannelState </dd></dl>
 
 <p>Implements <a class="el" href="../../d5/d00/classwestonrobot_1_1MobileRobotInterface.html#a9d136c1ad0adace270d559c4f10ab06d">westonrobot::MobileRobotInterface</a>.</p>
+
+</div>
+</div>
+<a id="a876be60a6fbc38f46ae2d2c1c5218145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876be60a6fbc38f46ae2d2c1c5218145">&#9670;&nbsp;</a></span>GetSecondaryBatteryState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d75/structwestonrobot_1_1BatteryState.html">BatteryState</a> westonrobot::RobooterXBaseAdapter::GetSecondaryBatteryState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Battery State of secondary battery. </p>
+<p>Battery located at side of seat.</p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dd/d75/structwestonrobot_1_1BatteryState.html" title="Battery State.">BatteryState</a> </dd></dl>
 
 </div>
 </div>
