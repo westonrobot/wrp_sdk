@@ -1,0 +1,14 @@
+<map id="include/wrp_sdk/peripheral/imu_sensor_hipnuc.hpp" name="include/wrp_sdk/peripheral/imu_sensor_hipnuc.hpp">
+<area shape="rect" id="node1" title="IMU Sensor Interface for HiPNUC." alt="" coords="40,5,237,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="27,102,104,129"/>
+<area shape="rect" id="node3" href="$de/d5f/imu__interface_8hpp.html" title="IMU Interface." alt="" coords="129,95,295,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,191,61,218"/>
+<area shape="rect" id="node5" title=" " alt="" coords="86,191,173,218"/>
+<area shape="rect" id="node6" href="$dc/da0/common__types_8hpp.html" title="Common Types." alt="" coords="197,184,395,225"/>
+<area shape="rect" id="node9" href="$dc/dba/sensor__interface_8hpp.html" title="Sensor Interface." alt="" coords="419,184,605,225"/>
+<area shape="rect" id="node7" title=" " alt="" coords="217,281,284,307"/>
+<area shape="rect" id="node8" title=" " alt="" coords="308,281,375,307"/>
+<area shape="rect" id="node10" title=" " alt="" coords="411,281,498,307"/>
+<area shape="rect" id="node11" href="$d0/d9a/peripheral__base__interface_8hpp.html" title="Peripheral Base Interface This interface is not intended to be used by user." alt="" coords="523,273,731,315"/>
+<area shape="rect" id="node12" title=" " alt="" coords="597,363,656,389"/>
+</map>

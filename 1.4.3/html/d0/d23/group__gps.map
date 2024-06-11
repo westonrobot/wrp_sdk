@@ -1,0 +1,5 @@
+<map id="GPS" name="GPS">
+<area shape="rect" id="node1" title=" " alt="" coords="148,5,196,31"/>
+<area shape="rect" id="node3" href="$d3/d02/group__gps__nmea.html" title=" " alt="" coords="244,5,396,31"/>
+<area shape="rect" id="node2" href="$de/de2/group__perif.html" title=" " alt="" coords="5,5,100,31"/>
+</map>

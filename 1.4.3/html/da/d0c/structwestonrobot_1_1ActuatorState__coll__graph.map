@@ -1,0 +1,5 @@
+<map id="westonrobot::ActuatorState" name="westonrobot::ActuatorState">
+<area shape="rect" id="node1" title="Actuator state Motor and driver state." alt="" coords="101,95,301,121"/>
+<area shape="rect" id="node2" href="$dd/d2c/structwestonrobot_1_1MotorState.html" title="Motor state." alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node3" href="$d0/dc8/structwestonrobot_1_1DriverState.html" title="Motor driver state." alt="" coords="212,5,397,32"/>
+</map>
