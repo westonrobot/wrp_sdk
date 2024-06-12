@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     ['latest-stable', '/latest-stable'],
     ['1.3.0', '/1.3.0'],
     ['1.4.1', '/1.4.1'],
+    ['1.4.2', '/1.4.2'],
+    ['1.4.3', '/1.4.3'],
   ];
   var h = '<select>';
   var current_ver = $("#projectnumber")[0].innerText || versions[0][0];
