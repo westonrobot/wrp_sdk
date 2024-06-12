@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
   var versions = [ //ATTN:  version, path. First one is the default. add when new version is released.
     ['latest-stable', '/latest-stable'],
-    ['1.3.0', '/1.3.0'],
-    ['1.4.1', '/1.4.1'],
-    ['1.4.2', '/1.4.2'],
     ['1.4.3', '/1.4.3'],
+    ['1.4.2', '/1.4.2'],
+    ['1.4.1', '/1.4.1'],
+    ['1.3.0', '/1.3.0'],
   ];
   var h = '<select>';
   var current_ver = $("#projectnumber")[0].innerText || versions[0][0];
